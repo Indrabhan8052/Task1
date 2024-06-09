@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+	<style>
+	 *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: sans-serif;
+        }
+        #container
+        {
+            width: 100%;
+            height:100vh;
+            background-image:url("code.jpg");
+            /* background-image: url("background.jpeg"); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #header
+        {
+            height:50px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: orange;
+        }       
+       .logo{
+	    padding-left:10px;
+        font-size: 25px;
+        font-weight: bold;
+		}
+        .search-box{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .box{
+            width: 30%;
+            height: 30px;
+            display: flex;
+        }
+        a{ 
+          text-decoration: none;
+          }
+		li{
+            list-style: none;
+            padding: 20px;
+		padding-right:10px;
+		display:inline-block;
+		flex-direction:row;
+		justify-content:space-between;
+		}
+        .write{
+            text-shadow:0px 2px 0px black;
+            color: orange;
+            font-size: 50px;
+            padding: 20px;
+            padding-top: 150px;
+        }
+	</style>
+</head>
+    <body>
+   <div id="container">
+        <div id="header">
+            <div class="logo"><b>Indrabhan Verma</b></div>
+             <div class="box">
+             <input class="search-box" type="text"placeholder="Search" value="">
+            </div>
+			<div class="content">
+              <li><b>Home</b></li>
+              <li><b>Login</b></li>
+             <li><b>Profile</b></li>
+			  <li><b>Services</b></li>
+			 </div>
+	    </div>
+        <div class="write">
+            Hello !<br>
+            I am Indra Bhan Verma<br>
+        Welcome To My Website
+        </div>
+   </div>
+</body>
+</html>
